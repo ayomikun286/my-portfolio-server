@@ -9,6 +9,9 @@ import dns from "dns";
 
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 dns.setDefaultResultOrder("ipv4first");
+
+console.log("DNS order:", dns.getDefaultResultOrder());
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
