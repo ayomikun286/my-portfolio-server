@@ -1,6 +1,6 @@
 import { validateEmail } from "../utils/validator.js"
 import { sendEmail } from "../services/email.services.js";
-
+import { successResponse, errorResponse } from "../utils/response.js";
 
 export const contactForm = async (req, res) => {
     const { name, email, message } = req.body;
