@@ -1,4 +1,4 @@
 export const corsOptions = {
-    origin: "*",
+    origin:["https://mikundev.vercel.app","http://localhost:5173"],
     methods: ["GET", "POST"],
 };
