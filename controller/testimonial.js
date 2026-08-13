@@ -1,6 +1,7 @@
 import TestimonialSchema from "../models/Testimonial.js";
 import { successResponse, errorResponse } from "../utils/response.js";
-import { sendEmail } from "../services/email.services.js";
+// import { sendEmail } from "../services/resend.js";
+import sendEmail from "../services/resend.js";
 
 export const createTestimonial = async (req, res) => {
     const { name, email, message, role, company, rating } = req.body;
