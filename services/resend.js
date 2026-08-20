@@ -21,6 +21,6 @@ async function sendEmail({ subject, html }){
       }
 }
 
-console.log("RESEND_API_KEY:", process.env.RESEND_API_KEY);
+// console.log("RESEND_API_KEY:", process.env.RESEND_API_KEY);
 
 export default sendEmail;
